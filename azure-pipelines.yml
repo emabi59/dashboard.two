@@ -20,3 +20,5 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
+# I added this for the error happen to release
+- task: PublishBuildArtifacts@1
