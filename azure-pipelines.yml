@@ -27,7 +27,8 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
-# I added this for the error happen to release
+
+
 - task: CopyFiles@2
   inputs:
     targetFolder: '$(Build.ArtifactStagingDirectory)'    
